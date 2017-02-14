@@ -1,0 +1,23 @@
+{
+  "name": "ManageWP",
+  "version": "1.0.0",
+  "description": "Unofficial ManageWP plugin for Franz",
+  "main": "index.js",
+  "author": "Daniel J Griffiths <dgriffiths@section214.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://orion.managewp.com/",
+    "serviceName": "ManageWP",
+    "message": "",
+    "popup": [],
+    "hasNotificationSound": false,
+    "hasIndirectMessages": false,
+    "hasTeamID": false,
+    "customURL": false,
+    "hostedOnly": false,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}
