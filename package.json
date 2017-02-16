@@ -1,6 +1,6 @@
 {
   "name": "ManageWP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial ManageWP plugin for Franz",
   "main": "index.js",
   "author": "Daniel J Griffiths <dgriffiths@section214.com>",

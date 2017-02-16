@@ -13,11 +13,15 @@ module.exports = (Franz, options) => {
 				updates = updates + parseInt(available);
 			});
 
-			issues = $('.optimization-widget .gtm_overview_maintenance-comments .center-text').text();
-			optimizations = optimizations + parseInt(issues);
+			if($('.optimization-widget .gtm_overview_maintenance-comments .center-text').length) {
+				issues = $('.optimization-widget .gtm_overview_maintenance-comments .center-text').text();
+				optimizations = optimizations + parseInt(issues);
+			}
 
-			issues = $('.optimization-widget .gtm_overview_maintenance-revisions .center-text').text();
-			optimizations = optimizations + parseInt(issues);
+			if($('.optimization-widget .gtm_overview_maintenance-revisions .center-text').length) {
+				issues = $('.optimization-widget .gtm_overview_maintenance-revisions .center-text').text();
+				optimizations = optimizations + parseInt(issues);
+			}
 
 			comments = $('.comments-widget .panel-heading button:first-child').text();
 			comments = comments.match(/\((.*)\)/)[1];
@@ -72,6 +76,10 @@ module.exports = (Franz, options) => {
 			comments = comments.match(/\((.*)\)/)[1];
 
 			total = updates + '/' + optimizations + '/' + comments;
+		}
+
+		if(total === '0/0/0') {
+			total = 0;
 		}
 
 		Franz.setBadge(total);
