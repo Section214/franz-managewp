@@ -1,4 +1,23 @@
+/**
+ * ManageWP integration plugin for Franz
+ *
+ * @summary     Integrates devRant into the Franz application
+ * @since       1.0.0
+ */
+
+
+/**
+ * The core Franz message handler
+ *
+ * @since       1.0.0
+ */
 module.exports = (Franz, options) => {
+	/**
+	 * Get messages for the Franz loop
+	 *
+	 * @since       1.0.0
+	 * @return      {void}
+	 */
 	function getMessages() {
 		let total = 0;
 		let updates = 0;
