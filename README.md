@@ -1,7 +1,6 @@
 # Unofficial ManageWP plugin for [Franz](http://meetfranz.com/)
 
 [![GitHub release](https://img.shields.io/github/release/Section214/franz-managewp.svg)](https://github.com/Section214/franz-managewp/releases/latest)
-[![Github All Releases](https://img.shields.io/github/downloads/Section214/franz-managewp/total.svg)](https://github.com/Section214/franz-managewp/releases/latest)
 [![license](https://img.shields.io/github/license/Section214/franz-managewp.svg)](https://github.com/Section214/franz-managewp/blob/master/LICENSE)
 
 The minimum required version of Franz to run custom integrations is 4.0.0. You can download the latest version of Franz [here](http://meetfranz.com/#download).
